@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[NowCoder-冥土追魂]]></title>
+    <url>%2F%2FNowCoder-%E5%86%A5%E5%9C%9F%E8%BF%BD%E9%AD%82%2F</url>
+    <content type="text"><![CDATA[题目链接NowCoder-冥土追魂 题意简述有一个 $n * m \ (n, \ m &lt;= 1000)$ 的整数组成的矩阵。 一次操作将取走一行里最大的数，操作 ‘$ k / (k &lt;= n * m)$’ 次。 最小化取走的数的和。 思路代码cpp 杂项 就差一点点。]]></content>
+      <categories>
+        <category>NowCoder</category>
+      </categories>
+      <tags>
+        <tag>乱搞</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LGOJ3398-仓鼠找sugar]]></title>
     <url>%2F%2FLGOJ3398-%E4%BB%93%E9%BC%A0%E6%89%BEsugar%2F</url>
-    <content type="text"><![CDATA[题目链接LGOJ3398-仓鼠找sugar 题意简述给定一棵 n (n]]></content>
+    <content type="text"><![CDATA[题目链接LGOJ3398-仓鼠找sugar 题意简述给定一棵 n \ (n]]></content>
       <categories>
         <category>LGOJ</category>
       </categories>
@@ -89,7 +100,7 @@
   <entry>
     <title><![CDATA[[HNOI2010] 弹飞绵羊]]></title>
     <url>%2F%2FHNOI2010-%E5%BC%B9%E9%A3%9E%E7%BB%B5%E7%BE%8A%2F</url>
-    <content type="text"><![CDATA[题目链接[HNOI2010]弹飞绵羊 题意简述地上沿着一条直线摆着 n (n]]></content>
+    <content type="text"><![CDATA[题目链接[HNOI2010]弹飞绵羊 题意简述地上沿着一条直线摆着 n \ (n]]></content>
       <categories>
         <category>各省省选</category>
         <category>HNOI</category>
@@ -165,7 +176,7 @@
   <entry>
     <title><![CDATA[CF962D Merge Equals]]></title>
     <url>%2F%2FCF962D-Merge-Equals%2F</url>
-    <content type="text"><![CDATA[题目链接CF962D Merge Equals 题意简述给出一个长度为 $n \ (2&lt;= n &lt;= 150000)$ 的数组， 数组内元素 $a{i} \ (1 &lt;= a{i} &lt;= 1e9)$ 。 每次操作将数组内两个相同的最小的最靠左的元素取出，并将左边的合并到右边，直到不能操作为止，输出最后的数组。 例：$[1, 1, 3, 1, 1]~\rightarrow~[2, 3, 1, 1]~\rightarrow~[2, 3, 2]~\rightarrow~[3, 4]$ 思路暴力首先考虑暴力，也就是暴力查找。时间复杂度： $O(n^{2})$ 。 正解正解应该挺容易想到的，用堆维护数值和位置，每次取出两个，不相同就删了第一个，否则合并。时间复杂度： $O(n \ log(n))$ 。 代码1234567891011121314151617181920212223242526272829303132333435363738394041#include &lt;bits/stdc++.h&gt;#define REG register#define IN inline#define For(x,y,z) for (REG int (x) = (y); (x) &lt;= (z); ++(x))#define FOR(x,y,z) for (REG int (x) = (y); (x) &lt; (z); ++(x))const int kmax_num = 1e6 + 10, kmax_int = 2147483647, kmod = 1e9+7;#define pli std::pair&lt;long long, int&gt;#define mp std::make_pairint n;long long f[kmax_num];std::set&lt;pli&gt; set;int main() &#123; std::cin &gt;&gt; n; FOR(i,0,n) std::cin &gt;&gt; f[i], set.insert(mp(f[i], i)); REG pli t1, t2; while(!set.empty()) &#123; t1 = *set.begin(), t2 = *(++set.begin()); if(t1.first != t2.first) &#123; set.erase(set.begin()); &#125; else &#123; set.insert(mp(t1.first &lt;&lt; 1, t2.second)); f[t1.second] = 0; f[t2.second] = t1.first &lt;&lt; 1; set.erase(set.begin()); set.erase(set.begin()); &#125; &#125; REG int ans = 0; FOR(i,0,n) if(f[i]) ++ans; printf("%d\n", ans); FOR(i,0,n) if(f[i]) printf("%lld ", f[i]); printf("\n"); return 0;&#125; 杂项 这里用 $std::set$ 实现，$std::set$ 大法好！ 这里还用了 $std::pair$ 实现，$std::pair$ 大法好！ 这道题在洛谷上居然是蓝题！！还不去水一发吗2333]]></content>
+    <content type="text"><![CDATA[题目链接CF962D Merge Equals 题意简述给出一个长度为 $n \ (2 &lt;= n &lt;= 150000)$ 的数组， 数组内元素 $a{i} \ (1 &lt;= a{i} &lt;= 1e9)$ 。 每次操作将数组内两个相同的最小的最靠左的元素取出，并将左边的合并到右边，直到不能操作为止，输出最后的数组。 例：$[1, 1, 3, 1, 1]~\rightarrow~[2, 3, 1, 1]~\rightarrow~[2, 3, 2]~\rightarrow~[3, 4]$ 思路暴力首先考虑暴力，也就是暴力查找。时间复杂度： $O(n^{2})$ 。 正解正解应该挺容易想到的，用堆维护数值和位置，每次取出两个，不相同就删了第一个，否则合并。时间复杂度： $O(n \ log(n))$ 。 代码1234567891011121314151617181920212223242526272829303132333435363738394041#include &lt;bits/stdc++.h&gt;#define REG register#define IN inline#define For(x,y,z) for (REG int (x) = (y); (x) &lt;= (z); ++(x))#define FOR(x,y,z) for (REG int (x) = (y); (x) &lt; (z); ++(x))const int kmax_num = 1e6 + 10, kmax_int = 2147483647, kmod = 1e9+7;#define pli std::pair&lt;long long, int&gt;#define mp std::make_pairint n;long long f[kmax_num];std::set&lt;pli&gt; set;int main() &#123; std::cin &gt;&gt; n; FOR(i,0,n) std::cin &gt;&gt; f[i], set.insert(mp(f[i], i)); REG pli t1, t2; while(!set.empty()) &#123; t1 = *set.begin(), t2 = *(++set.begin()); if(t1.first != t2.first) &#123; set.erase(set.begin()); &#125; else &#123; set.insert(mp(t1.first &lt;&lt; 1, t2.second)); f[t1.second] = 0; f[t2.second] = t1.first &lt;&lt; 1; set.erase(set.begin()); set.erase(set.begin()); &#125; &#125; REG int ans = 0; FOR(i,0,n) if(f[i]) ++ans; printf("%d\n", ans); FOR(i,0,n) if(f[i]) printf("%lld ", f[i]); printf("\n"); return 0;&#125; 杂项 这里用 $std::set$ 实现，$std::set$ 大法好！ 这里还用了 $std::pair$ 实现，$std::pair$ 大法好！ 这道题在洛谷上居然是蓝题！！还不去水一发吗2333]]></content>
       <categories>
         <category>CodeForces</category>
       </categories>
