@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[NowCoder-冥土追魂]]></title>
     <url>%2F%2FNowCoder-%E5%86%A5%E5%9C%9F%E8%BF%BD%E9%AD%82%2F</url>
-    <content type="text"><![CDATA[题目链接NowCoder-冥土追魂 题意简述有一个 $n * m \ (n, \ m &lt;= 1000)$ 的整数组成的矩阵。 一次操作将取走一行里最大的数，操作 ‘$ k / (k &lt;= n * m)$’ 次。 最小化取走的数的和。 思路代码cpp 杂项 就差一点点。]]></content>
+    <content type="text"><![CDATA[题目链接NowCoder-冥土追魂 题意简述有一个 $n * m \ (n, \ m &lt;= 1000)$ 的整数组成的矩阵。 一次操作将取走一行里最大的数，操作 ‘$ k \ (k &lt;= n * m)$’ 次。 最小化取走的数的和。 思路代码cpp 杂项 就差一点点。]]></content>
       <categories>
         <category>NowCoder</category>
       </categories>
