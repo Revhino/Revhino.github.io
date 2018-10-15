@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://Revhino.github.io//CF962D-Merge-Equals/</loc>
+    <lastmod>2018-10-15T04:37:21.285Z</lastmod>
+    <data>
+        <display>
+        <title>CF962D Merge Equals</title>
+        <pubTime>2018-04-12T04:41:42.000Z</pubTime>
+        
+        <tag>水题</tag>
+         
+        <tag>std::set</tag>
+         
+         
+           
+             
+              <breadCrumb title="CodeForces" url="https://Revhino.github.io/categories/CodeForces/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://Revhino.github.io//NowCoder-%E5%86%A5%E5%9C%9F%E8%BF%BD%E9%AD%82/</loc>
     <lastmod>2018-10-15T04:16:51.809Z</lastmod>
     <data>
@@ -360,28 +382,6 @@
           
              
               <breadCrumb title="HAOI" url="https://Revhino.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/HAOI/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://Revhino.github.io//CF962D-Merge-Equals/</loc>
-    <lastmod>2018-10-14T23:15:59.335Z</lastmod>
-    <data>
-        <display>
-        <title>CF962D Merge Equals</title>
-        <pubTime>2018-04-12T04:41:42.000Z</pubTime>
-        
-        <tag>水题</tag>
-         
-        <tag>std::set</tag>
-         
-         
-           
-             
-              <breadCrumb title="CodeForces" url="https://Revhino.github.io/categories/CodeForces/"/>
           
         </display>
     </data>
